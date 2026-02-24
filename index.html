@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NAWI — Your Digital Eye</title>
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --blue:#2B86BF;
+      --green:#4DC966;
+      --teal:#3BBFA7;
+      --deep:#113230;
+      --white:#F8FCFC;
+      --bg:#071b1a;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      color:var(--white);
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(43,134,191,.35), transparent 55%),
+        radial-gradient(1200px 600px at 85% 20%, rgba(77,201,102,.25), transparent 55%),
+        radial-gradient(900px 500px at 55% 90%, rgba(59,191,167,.20), transparent 60%),
+        linear-gradient(180deg, #061615, var(--bg));
+      min-height:100vh;
+    }
+
+    .wrap{max-width:1100px;margin:0 auto;padding:56px 20px 40px}
+
+    .card{
+      background: rgba(17,50,48,.45);
+      border:1px solid rgba(248,252,252,.12);
+      border-radius:26px;
+      padding:30px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      backdrop-filter:blur(12px);
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      margin-bottom:18px;
+    }
+
+    .logo{
+      width:200px;
+      filter:drop-shadow(0 12px 25px rgba(0,0,0,.4));
+    }
+
+    .tag{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid rgba(248,252,252,.15);
+      background:rgba(7,27,26,.35);
+      font-size:13px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .dot{
+      width:8px;height:8px;border-radius:50%;
+      background:var(--green);
+      box-shadow:0 0 0 4px rgba(77,201,102,.2);
+    }
+
+    h1{
+      font-size:44px;
+      margin:10px 0 6px;
+      letter-spacing:-0.5px;
+    }
+
+    .sub{
+      font-size:18px;
+      color:rgba(248,252,252,.85);
+      max-width:760px;
+      margin-bottom:18px;
+    }
+
+    .soon{
+      margin-top:10px;
+      padding:10px 14px;
+      border-radius:14px;
+      border:1px dashed rgba(248,252,252,.25);
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-weight:500;
+    }
+
+    .pulse{
+      width:10px;height:10px;border-radius:50%;
+      background:var(--teal);
+      box-shadow:0 0 0 0 rgba(59,191,167,.6);
+      animation:pulse 1.6s infinite;
+    }
+
+    @keyframes pulse{
+      0%{box-shadow:0 0 0 0 rgba(59,191,167,.6)}
+      70%{box-shadow:0 0 0 12px rgba(59,191,167,0)}
+      100%{box-shadow:0 0 0 0 rgba(59,191,167,0)}
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      margin-top:20px;
+    }
+
+    .panel{
+      background:rgba(7,27,26,.35);
+      border:1px solid rgba(248,252,252,.12);
+      border-radius:18px;
+      padding:18px;
+    }
+
+    .panel h2{
+      margin:0 0 10px;
+      font-size:18px;
+    }
+
+    ul{
+      margin:0;
+      padding-left:18px;
+      color:rgba(248,252,252,.85);
+    }
+
+    li{margin:8px 0}
+
+    /* PDF section */
+    .pdfSection{
+      margin-top:28px;
+    }
+
+    .pdfTitle{
+      font-size:22px;
+      margin-bottom:12px;
+      font-weight:600;
+    }
+
+    .pdfFrame{
+      width:100%;
+      height:650px;
+      border-radius:16px;
+      border:1px solid rgba(248,252,252,.15);
+      overflow:hidden;
+      background:#0b2220;
+    }
+
+    iframe{
+      width:100%;
+      height:100%;
+      border:none;
+    }
+
+    footer{
+      margin-top:20px;
+      font-size:12px;
+      color:rgba(248,252,252,.55);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
+    @media(max-width:900px){
+      header{flex-direction:column;align-items:flex-start}
+      .grid{grid-template-columns:1fr}
+      .logo{width:220px}
+      h1{font-size:34px}
+      .pdfFrame{height:520px}
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="card">
+
+    <header>
+      <img class="logo" src="NAwi_logo.png" alt="NAWI logo">
+      <div class="tag"><span class="dot"></span> Bolivia · MVP en desarrollo</div>
+    </header>
+
+    <h1>NAWI - Your Digital Eye</h1>
+
+    <p class="sub">
+      NAWI es una solución basada en inteligencia artificial para la detección y prevención de estafas digitales,
+      creada para personas. Estamos construyendo el MVP y muy pronto publicaremos más información y una demo.
+    </p>
+
+    <div class="soon">
+      <span class="pulse"></span>
+      Muy pronto: demo pública y lanzamiento inicial
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h2>¿Qué hace NAWI?</h2>
+        <ul>
+          <li>Detecta señales de fraude en mensajes, enlaces y comunicaciones digitales.</li>
+          <li>Envía alertas simples para tomar decisiones seguras.</li>
+          <li>Enfocado en poblaciones vulnerables en Bolivia.</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h2>Roadmap</h2>
+        <ul>
+          <li>MVP funcional en desarrollo.</li>
+          <li>Demo privada y pilotos iniciales.</li>
+          <li>Expansión Bolivia → LATAM.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PDF EMBED -->
+    <div class="pdfSection">
+      <div class="pdfTitle">Más información sobre NAWI</div>
+      <div class="pdfFrame">
+        <iframe src="Nawi By Paola.pdf"></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <span>© NAWI / Nawitech</span>
+      <span>Your Digital Eye</span>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>
