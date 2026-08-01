@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NAWI — Delete Account & Data</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --blue:#2B86BF;
+      --green:#4DC966;
+      --teal:#3BBFA7;
+      --deep:#113230;
+      --white:#F8FCFC;
+      --bg:#071b1a;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      color:var(--white);
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(43,134,191,.35), transparent 55%),
+        radial-gradient(1200px 600px at 85% 20%, rgba(77,201,102,.25), transparent 55%),
+        radial-gradient(900px 500px at 55% 90%, rgba(59,191,167,.20), transparent 60%),
+        linear-gradient(180deg, #061615, var(--bg));
+      min-height:100vh;
+    }
+
+    .wrap{max-width:900px;margin:0 auto;padding:56px 20px 40px}
+
+    .card{
+      background: rgba(17,50,48,.45);
+      border:1px solid rgba(248,252,252,.12);
+      border-radius:26px;
+      padding:36px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      backdrop-filter:blur(12px);
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      margin-bottom:24px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      width:150px;
+      filter:drop-shadow(0 12px 25px rgba(0,0,0,.4));
+    }
+
+    .tag{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid rgba(248,252,252,.15);
+      background:rgba(7,27,26,.35);
+      font-size:13px;
+    }
+
+    h1{
+      font-size:34px;
+      margin:0 0 6px;
+      letter-spacing:-0.5px;
+    }
+
+    .updated{
+      font-size:13px;
+      color:rgba(248,252,252,.6);
+      margin-bottom:28px;
+    }
+
+    h2{
+      font-size:20px;
+      margin:32px 0 10px;
+      color:var(--teal);
+    }
+
+    p, li{
+      font-size:15px;
+      line-height:1.7;
+      color:rgba(248,252,252,.9);
+    }
+
+    ul, ol{
+      padding-left:20px;
+      margin:10px 0;
+    }
+
+    li{margin:8px 0}
+
+    a{color:var(--green)}
+
+    .panel{
+      background:rgba(7,27,26,.35);
+      border:1px solid rgba(248,252,252,.12);
+      border-radius:18px;
+      padding:20px 22px;
+      margin:18px 0;
+    }
+
+    .cta{
+      display:inline-block;
+      margin-top:6px;
+      padding:12px 22px;
+      border-radius:12px;
+      background:var(--green);
+      color:#06231c;
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:14px 0;
+      font-size:14px;
+    }
+
+    th, td{
+      text-align:left;
+      padding:10px 12px;
+      border-bottom:1px solid rgba(248,252,252,.12);
+      vertical-align:top;
+    }
+
+    th{
+      color:var(--teal);
+      font-weight:600;
+    }
+
+    footer{
+      margin-top:32px;
+      font-size:12px;
+      color:rgba(248,252,252,.55);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
+    .backlink{
+      display:inline-block;
+      margin-top:24px;
+      font-size:14px;
+    }
+
+    @media(max-width:700px){
+      header{flex-direction:column;align-items:flex-start}
+      h1{font-size:26px}
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="card">
+
+    <header>
+      <img class="logo" src="../NAwi_logo.png" alt="NAWI logo">
+      <div class="tag">Delete account & data</div>
+    </header>
+
+    <h1>Request deletion of your NAWI account</h1>
+    <div class="updated">Applies to the NAWI app (com.nawitech.nawi)</div>
+
+    <p>
+      You can request permanent deletion of your NAWI account and associated data at any time. This process
+      is currently handled by email; our team confirms your identity and deletes the information within a
+      reasonable timeframe.
+    </p>
+
+    <div class="panel">
+      <h2 style="margin-top:0">How to request it</h2>
+      <ol>
+        <li>Send an email to <a href="mailto:pmedrano566@gmail.com?subject=NAWI%20Account%20Deletion%20Request">pmedrano566@gmail.com</a> with the subject <strong>"NAWI Account Deletion Request"</strong>.</li>
+        <li>Include the <strong>username</strong> registered in the app (we don't need an email or additional data to identify you, since NAWI doesn't require an email to create an account).</li>
+        <li>You'll receive a confirmation once your account and associated data have been deleted.</li>
+      </ol>
+      <a class="cta" href="mailto:pmedrano566@gmail.com?subject=NAWI%20Account%20Deletion%20Request">Request deletion by email</a>
+    </div>
+
+    <h2>What data is deleted</h2>
+    <table>
+      <tr><th>Data</th><th>Deleted?</th></tr>
+      <tr><td>Username and password</td><td>Yes</td></tr>
+      <tr><td>Profile (age range, country, gender, preferences)</td><td>Yes</td></tr>
+      <tr><td>Saved approximate location</td><td>Yes</td></tr>
+      <tr><td>Push notification token</td><td>Yes</td></tr>
+      <tr><td>Scam analysis history and assistant conversations</td><td>Yes</td></tr>
+      <tr><td>Threat reports already anonymized on the community map</td><td>Unlinked from your account; the anonymous report may be retained to keep the map useful for other users</td></tr>
+    </table>
+
+    <h2>Timeframe</h2>
+    <p>
+      We process deletion requests within up to 30 days. If you have any questions about the status of your
+      request, you can reply to the same email.
+    </p>
+
+    <p>
+      For more information on how we handle your data, see our
+      <a href="privacy.html">Privacy Policy</a>. Need help? Visit our
+      <a href="support.html">support page</a>.
+    </p>
+
+    <a class="backlink" href="index.html">← Back to NAWI</a>
+
+    <footer>
+      <span>© NAWI / Nawitech</span>
+      <span>Your Digital Eye · <a href="../eliminar-cuenta.html" style="color:rgba(248,252,252,.7)">Español</a></span>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NAWI — Privacy Policy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --blue:#2B86BF;
+      --green:#4DC966;
+      --teal:#3BBFA7;
+      --deep:#113230;
+      --white:#F8FCFC;
+      --bg:#071b1a;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      color:var(--white);
+      background:
+        radial-gradient(1200px 600px at 15% 10%, rgba(43,134,191,.35), transparent 55%),
+        radial-gradient(1200px 600px at 85% 20%, rgba(77,201,102,.25), transparent 55%),
+        radial-gradient(900px 500px at 55% 90%, rgba(59,191,167,.20), transparent 60%),
+        linear-gradient(180deg, #061615, var(--bg));
+      min-height:100vh;
+    }
+
+    .wrap{max-width:900px;margin:0 auto;padding:56px 20px 40px}
+
+    .card{
+      background: rgba(17,50,48,.45);
+      border:1px solid rgba(248,252,252,.12);
+      border-radius:26px;
+      padding:36px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      backdrop-filter:blur(12px);
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      margin-bottom:24px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      width:150px;
+      filter:drop-shadow(0 12px 25px rgba(0,0,0,.4));
+    }
+
+    .tag{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid rgba(248,252,252,.15);
+      background:rgba(7,27,26,.35);
+      font-size:13px;
+    }
+
+    h1{
+      font-size:34px;
+      margin:0 0 6px;
+      letter-spacing:-0.5px;
+    }
+
+    .updated{
+      font-size:13px;
+      color:rgba(248,252,252,.6);
+      margin-bottom:28px;
+    }
+
+    h2{
+      font-size:20px;
+      margin:32px 0 10px;
+      color:var(--teal);
+    }
+
+    p, li{
+      font-size:15px;
+      line-height:1.7;
+      color:rgba(248,252,252,.9);
+    }
+
+    ul{
+      padding-left:20px;
+      margin:10px 0;
+    }
+
+    li{margin:6px 0}
+
+    a{color:var(--green)}
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:14px 0;
+      font-size:14px;
+    }
+
+    th, td{
+      text-align:left;
+      padding:10px 12px;
+      border-bottom:1px solid rgba(248,252,252,.12);
+      vertical-align:top;
+    }
+
+    th{
+      color:var(--teal);
+      font-weight:600;
+    }
+
+    .panel{
+      background:rgba(7,27,26,.35);
+      border:1px solid rgba(248,252,252,.12);
+      border-radius:18px;
+      padding:18px 20px;
+      margin:18px 0;
+    }
+
+    footer{
+      margin-top:32px;
+      font-size:12px;
+      color:rgba(248,252,252,.55);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
+    .backlink{
+      display:inline-block;
+      margin-top:24px;
+      font-size:14px;
+    }
+
+    @media(max-width:700px){
+      header{flex-direction:column;align-items:flex-start}
+      h1{font-size:26px}
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="card">
+
+    <header>
+      <img class="logo" src="../NAwi_logo.png" alt="NAWI logo">
+      <div class="tag">Privacy Policy</div>
+    </header>
+
+    <h1>NAWI Privacy Policy</h1>
+    <div class="updated">Last updated: July 12, 2026</div>
+
+    <p>
+      NAWI ("we", "the app") is an application developed by Nawitech to help people detect and prevent
+      digital scams, and to receive alerts about nearby threats. This policy explains what data we collect,
+      how we use it, who we share it with, and what rights you have over it.
+    </p>
+
+    <h2>1. Data we collect</h2>
+    <table>
+      <tr><th>Data</th><th>Detail</th></tr>
+      <tr>
+        <td>Account data</td>
+        <td>Username and password (stored encrypted). We do not require your real name or email to create an account.</td>
+      </tr>
+      <tr>
+        <td>Profile data</td>
+        <td>Age range, country, and optionally gender and digital trust level, which help us personalize alerts.</td>
+      </tr>
+      <tr>
+        <td>Approximate location</td>
+        <td>With your permission, we use your approximate location (with a random margin of up to 150 meters; your exact position is never transmitted or stored) to show you nearby threats and send proximity alerts.</td>
+      </tr>
+      <tr>
+        <td>Push notification token</td>
+        <td>A technical identifier for your device (through Expo) that we use to send you security notifications.</td>
+      </tr>
+      <tr>
+        <td>Content you submit for analysis</td>
+        <td>Messages, links, phone numbers, or screenshots you choose to send us so we can analyze them and tell you if they're a possible scam. This content may include personal information you include yourself.</td>
+      </tr>
+      <tr>
+        <td>Sign in with Google/Apple</td>
+        <td>If you choose to sign in with Google or Apple, we may receive the email and name associated with that account. This feature is not yet active in all versions of the app.</td>
+      </tr>
+    </table>
+
+    <h2>2. How we use your data</h2>
+    <ul>
+      <li>Detect and analyze possible scams in the content you send us.</li>
+      <li>Show you reported threats near your approximate location.</li>
+      <li>Send you relevant security push notifications.</li>
+      <li>Maintain and protect your account.</li>
+      <li>Improve the accuracy of our fraud detection system.</li>
+    </ul>
+    <p>We do not sell your personal data or use it for third-party advertising.</p>
+
+    <h2>3. Who we share data with</h2>
+    <p>We use external providers only to operate the service:</p>
+    <ul>
+      <li><strong>Expo (push notifications)</strong>: to send alerts to your device.</li>
+      <li><strong>Hosting and infrastructure providers</strong> (database and cloud servers) that securely store the information described above.</li>
+      <li><strong>Google / Apple</strong>: only if you choose to sign in with those providers.</li>
+    </ul>
+    <p>We do not share your data with third parties for marketing purposes.</p>
+
+    <div class="panel">
+      <h2 style="margin-top:0">4. Location: how we protect your privacy</h2>
+      <p style="margin-bottom:0">
+        NAWI only requests <strong>approximate location</strong> permission ("while using the app"), never precise
+        background location. Before being used or sent, your location is randomly offset within a radius of up to
+        150 meters; your real position is never transmitted or retained.
+      </p>
+    </div>
+
+    <h2>5. Data retention and deletion</h2>
+    <p>
+      We keep your data while your account is active. You can request deletion of your account and associated
+      data at any time from our <a href="delete-account.html">account deletion</a> page or by writing to
+      <a href="mailto:pmedrano566@gmail.com">pmedrano566@gmail.com</a>. We will process your request and delete
+      your information within a reasonable timeframe, unless we must retain some data due to legal obligations.
+    </p>
+
+    <h2>6. Security</h2>
+    <p>
+      We apply reasonable technical measures (such as password encryption and secure connections) to protect
+      your information. No system is 100% infallible, so we recommend not sharing unnecessary sensitive
+      information in the content you send for analysis.
+    </p>
+
+    <h2>7. Minors</h2>
+    <p>
+      NAWI is intended for adults. We do not intentionally request data from minors under 18 years old.
+    </p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>
+      We may update this policy occasionally. We will publish any changes on this same page along with the
+      corresponding update date.
+    </p>
+
+    <h2>9. Contact</h2>
+    <p>
+      If you have questions about this policy or how we handle your data, write to us at
+      <a href="mailto:pmedrano566@gmail.com">pmedrano566@gmail.com</a> or visit our
+      <a href="support.html">support page</a>.
+    </p>
+
+    <a class="backlink" href="index.html">← Back to NAWI</a>
+
+    <footer>
+      <span>© NAWI / Nawitech</span>
+      <span>Your Digital Eye · <a href="../privacidad.html" style="color:rgba(248,252,252,.7)">Español</a></span>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>
