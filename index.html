@@ -824,6 +824,29 @@ section{padding:76px 0}
 footer{background:var(--deep-2);color:rgba(230,241,250,.6);padding:30px 0;font-size:.85rem}
 .foot-in{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;max-width:1080px;margin:0 auto;padding:0 22px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
+/* ---------- apoyo institucional (financiamiento ITU · GCYLP) ---------- */
+.support{background:var(--bg);padding:38px 0;border-top:1px solid rgba(18,38,63,.08)}
+.support-in{text-align:center}
+.support-k{
+  display:inline-block;margin-bottom:8px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(47,111,222,.75);
+}
+.support p{margin:0;font-size:.95rem;color:var(--ink-soft)}
+.support a{
+  color:var(--deep);font-weight:700;text-decoration:none;
+  border-bottom:2px solid rgba(47,111,222,.35);
+  transition:color .15s ease,border-color .15s ease;
+}
+.support a:hover{color:var(--blue);border-bottom-color:var(--blue)}
+.support-note{display:block;margin-top:8px;font-size:.8rem;color:rgba(18,38,63,.55)}
+.foot-support{
+  max-width:1080px;margin:18px auto 0;padding:14px 22px 0;
+  border-top:1px solid rgba(255,255,255,.09);
+  font-size:.78rem;color:rgba(230,241,250,.5);
+}
+.foot-support a{color:rgba(230,241,250,.8)}
+.foot-support a:hover{color:#fff}
 footer a{color:rgba(230,241,250,.85)}
 footer a:hover{color:#fff}
 
@@ -1753,6 +1776,17 @@ footer a:hover{color:#fff}
   </div>
 </section>
 
+<!-- ================= APOYO INSTITUCIONAL ================= -->
+<section class="support">
+  <div class="wrap support-in">
+    <span class="support-k">con el apoyo de</span>
+    <p>
+      <a href="https://www.itu.int/generationconnect/empower-main/generation-connect-young-leadership-programme-in-partnership-with-huawei-v2/" target="_blank" rel="noopener">ITU Generation Connect Young Leadership Programme</a>, en alianza con Huawei.
+      <span class="support-note">NAWI recibió financiamiento de este programa de la UIT para jóvenes líderes digitales.</span>
+    </p>
+  </div>
+</section>
+
 <!-- ================= CTA FINAL ================= -->
 <section class="final">
   <div class="wrap">
@@ -1781,6 +1815,9 @@ footer a:hover{color:#fff}
       <a href="privacidad.html">Privacidad</a>
       <a href="eliminar-cuenta.html">Eliminar cuenta</a>
     </nav>
+  </div>
+  <div class="foot-support">
+    Con el apoyo de <a href="https://www.itu.int/generationconnect/empower-main/generation-connect-young-leadership-programme-in-partnership-with-huawei-v2/" target="_blank" rel="noopener">ITU Generation Connect Young Leadership Programme</a>, en alianza con Huawei.
   </div>
 </footer>
 
