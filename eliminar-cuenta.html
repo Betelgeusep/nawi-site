@@ -118,12 +118,10 @@ header{
 .kicker svg{flex:none}
 .page-head h1{font-size:clamp(2.1rem,4.8vw,3rem);color:var(--deep);letter-spacing:-.5px}
 .page-head .sub{font-size:1.06rem;color:var(--ink-soft);margin:16px 0 10px;max-width:56ch}
-.applies{
-  display:inline-block;font-size:.78rem;font-weight:700;
-  color:rgba(18,38,63,.55);
-  border:2px dashed rgba(18,38,63,.28);
-  padding:4px 12px;border-radius:12px 4px 12px 4px;margin-top:6px;
-}
+
+/* ---------- volver al menú ---------- */
+.back-mod{display:flex;width:max-content;align-items:center;gap:7px;margin-bottom:16px;font-size:.9rem;font-weight:700;color:var(--blue);text-decoration:none}
+.back-mod:hover{text-decoration:underline;text-underline-offset:4px}
 
 /* subrayado sketch (como el hero v2) */
 .uw{position:relative;display:inline-block}
@@ -327,6 +325,7 @@ html:not(.js) .reveal,html:not(.js) .step{opacity:1;transform:none}
   <svg class="doodle d4" width="56" height="40" viewBox="0 0 56 40" fill="none" stroke="#2F6FDE" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><path d="M2 20 L54 4 L38 36 L26 24 Z"/><path d="M26 24 L54 4"/><path d="M26 24 L28 34"/></svg>
 
   <div class="wrap">
+    <a class="back-mod" href="index.html"><span aria-hidden="true">←</span> Volver al menú</a>
     <span class="kicker">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M5 6 q7 -4 14 0 q2 3 -1 5"/><path d="M7 3 l4 3 -3 4"/></svg>
       Eliminar cuenta y datos
@@ -339,7 +338,6 @@ html:not(.js) .reveal,html:not(.js) .step{opacity:1;transform:none}
       momento. Actualmente este proceso se gestiona por correo electrónico; nuestro equipo confirma tu identidad
       y elimina la información en un plazo razonable.
     </p>
-    <span class="applies">Aplica a la app NAWI (com.nawitech.nawi)</span>
   </div>
 </section>
 
