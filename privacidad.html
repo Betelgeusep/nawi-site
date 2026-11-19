@@ -1,268 +1,382 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NAWI — Política de Privacidad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAWI — Política de Privacidad</title>
+<!-- ============================================================
+     Política de Privacidad (ES)
+     Reutiliza el sistema visual de nawi-site-home-v2.html.
+     El texto legal es el original, intacto: solo cambia la presentación.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   NAWI · política de privacidad (v2)
+   Identidad "friendly cyber" de la landing v2:
+   navy #0A1628/#0B1E3A · nawiBlue #2F6FDE · cyan #2FA4C7
+   teal #39C3A6 · green #5CE05C · papel #F8FCFC
+   Página legal: calma y legibilidad, cero animación pesada.
+   ============================================================ */
+:root{
+  --bg:#F8FCFC;
+  --navy:#0A1628;
+  --deep:#0B1E3A;
+  --deep-2:#081324;
+  --deep-3:#1A3A52;
+  --blue:#2F6FDE;
+  --cyan:#2FA4C7;
+  --teal:#39C3A6;
+  --green:#5CE05C;
+  --ink:#12263F;
+  --ink-soft:#3C5878;
+  --paper:#FFFFFF;
+  --glass:rgba(11,30,58,.55);
+  --glass-line:rgba(255,255,255,.12);
+  --glow:rgba(47,111,222,.25);
+  --font:"Poppins",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{max-width:100%}
+a{color:var(--blue);text-decoration:none}
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root{
-      --blue:#2B86BF;
-      --green:#4DC966;
-      --teal:#3BBFA7;
-      --deep:#113230;
-      --white:#F8FCFC;
-      --bg:#071b1a;
-    }
+/* ---------- bordes "a mano alzada" ---------- */
+.sketch{
+  border:2.5px solid rgba(60,88,120,.55);
+  border-radius:255px 15px 225px 15px/15px 225px 15px 255px;
+  background:var(--paper);
+}
+.sketch-b{
+  border:2.5px solid rgba(60,88,120,.55);
+  border-radius:15px 225px 15px 255px/255px 15px 225px 15px;
+  background:var(--paper);
+}
 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:'Poppins',sans-serif;
-      color:var(--white);
-      background:
-        radial-gradient(1200px 600px at 15% 10%, rgba(43,134,191,.35), transparent 55%),
-        radial-gradient(1200px 600px at 85% 20%, rgba(77,201,102,.25), transparent 55%),
-        radial-gradient(900px 500px at 55% 90%, rgba(59,191,167,.20), transparent 60%),
-        linear-gradient(180deg, #061615, var(--bg));
-      min-height:100vh;
-    }
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(248,252,252,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(18,38,63,.08);
+}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 22px;max-width:1120px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;font-weight:600;font-size:1.35rem;color:var(--deep)}
+.logo span{display:inline-block;line-height:1.1}
+.logo small{display:block;font-size:.58rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-top:2px}
+.logo img{width:38px;height:38px;border-radius:10px}
+.pill-store{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:.8rem;font-weight:700;color:#fff;
+  background:linear-gradient(120deg,var(--blue),var(--cyan));
+  border:1.5px solid rgba(18,38,63,.25);
+  box-shadow:2px 3px 0 rgba(10,22,40,.85);
+  padding:6px 14px;border-radius:999px;white-space:nowrap;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.pill-store:hover{transform:translateY(-2px);box-shadow:3px 4px 0 rgba(10,22,40,.85)}
+.pill-store svg{flex:none}
 
-    .wrap{max-width:900px;margin:0 auto;padding:56px 20px 40px}
+/* ---------- layout de lectura ---------- */
+.page{max-width:1120px;margin:0 auto;padding:40px 22px 64px}
+.legal-grid{
+  display:grid;grid-template-columns:250px minmax(0,1fr);gap:40px;
+  align-items:start;
+}
+.toc{position:sticky;top:84px;padding:20px 18px}
+.toc h2{
+  font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(18,38,63,.5);margin-bottom:12px;
+}
+.toc ol{list-style:none;display:flex;flex-direction:column;gap:7px}
+.toc a{
+  display:block;font-size:.85rem;font-weight:600;color:var(--ink-soft);
+  padding:3px 2px;border-radius:6px;
+  transition:color .15s ease;
+}
+.toc a:hover{
+  color:var(--blue);
+  text-decoration:underline dashed var(--teal);
+  text-decoration-thickness:2px;text-underline-offset:4px;
+}
+.toc a.on{color:var(--blue)}
 
-    .card{
-      background: rgba(17,50,48,.45);
-      border:1px solid rgba(248,252,252,.12);
-      border-radius:26px;
-      padding:36px;
-      box-shadow:0 10px 30px rgba(0,0,0,.25);
-      backdrop-filter:blur(12px);
-    }
+/* ---------- título de la página ---------- */
+.page-head{grid-column:1/-1;margin-bottom:6px;position:relative}
+.page-head h1{font-size:clamp(1.9rem,4vw,2.5rem);color:var(--deep);letter-spacing:-.5px;line-height:1.2}
+.updated{font-size:.85rem;font-weight:600;color:rgba(18,38,63,.55);margin-top:8px}
+.page-head .doodle{position:absolute;right:2%;top:-14px;opacity:.5;pointer-events:none}
 
-    header{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:20px;
-      margin-bottom:24px;
-      flex-wrap:wrap;
-    }
+/* ---------- artículo legal ---------- */
+.doc{max-width:70ch}
+.doc p,.doc li{font-size:.98rem;line-height:1.75;color:var(--ink-soft)}
+.doc strong{color:var(--ink)}
+.doc a{font-weight:600;border-bottom:2px dashed rgba(47,111,222,.4);padding-bottom:1px}
+.doc a:hover{border-bottom-style:solid;border-bottom-color:var(--blue)}
+.doc ul{margin:10px 0 10px 20px}
+.doc li{margin:6px 0}
 
-    .logo{
-      width:150px;
-      filter:drop-shadow(0 12px 25px rgba(0,0,0,.4));
-    }
+.clause{padding:26px 28px;margin:0 0 22px;box-shadow:3px 4px 0 rgba(18,38,63,.08)}
+.clause h2{
+  display:flex;align-items:center;gap:12px;
+  font-size:1.15rem;color:var(--deep);margin-bottom:12px;line-height:1.3;
+}
+.clause h2 .num{
+  flex:none;width:32px;height:32px;display:flex;align-items:center;justify-content:center;
+  font-size:.95rem;font-weight:700;color:#fff;
+  border-radius:50% 44% 55% 46%;
+  box-shadow:2px 2px 0 rgba(18,38,63,.25);
+}
+.clause:nth-of-type(odd) h2 .num{background:var(--teal)}
+.clause:nth-of-type(even) h2 .num{background:var(--blue)}
+.clause table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.9rem}
+.clause th{
+  text-align:left;padding:10px 12px;color:var(--deep);font-weight:700;
+  border-bottom:2.5px solid rgba(60,88,120,.5);vertical-align:top;
+}
+.clause td{
+  text-align:left;padding:10px 12px;color:var(--ink-soft);line-height:1.65;
+  border-bottom:1.5px dashed rgba(60,88,120,.25);vertical-align:top;
+}
+/* cláusula destacada (ubicación) */
+.clause.hl{
+  background:linear-gradient(115deg,#E9F1FC,#E7F4FA);
+  border:2.5px dashed var(--blue);
+}
 
-    .tag{
-      padding:8px 14px;
-      border-radius:999px;
-      border:1px solid rgba(248,252,252,.15);
-      background:rgba(7,27,26,.35);
-      font-size:13px;
-    }
+/* ---------- footer ---------- */
+footer{background:var(--deep-2);color:rgba(230,241,250,.6);padding:30px 0;font-size:.85rem}
+.foot-in{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 22px}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
+footer a{color:rgba(230,241,250,.85)}
+footer a:hover{color:#fff;text-decoration:underline dashed var(--teal);text-underline-offset:4px}
 
-    h1{
-      font-size:34px;
-      margin:0 0 6px;
-      letter-spacing:-0.5px;
-    }
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .legal-grid{grid-template-columns:1fr;gap:22px}
+  .toc{position:static}
+  .toc ol{flex-direction:row;flex-wrap:wrap;gap:4px 14px}
+  .page-head .doodle{display:none}
+}
+@media (max-width:600px){
+  .page{padding:28px 16px 48px}
+  .clause{padding:20px 18px}
+  .clause table{font-size:.84rem}
+  .clause th,.clause td{padding:8px 8px}
+  .pill-store{font-size:.72rem;padding:5px 10px}
+}
 
-    .updated{
-      font-size:13px;
-      color:rgba(248,252,252,.6);
-      margin-bottom:28px;
-    }
-
-    h2{
-      font-size:20px;
-      margin:32px 0 10px;
-      color:var(--teal);
-    }
-
-    p, li{
-      font-size:15px;
-      line-height:1.7;
-      color:rgba(248,252,252,.9);
-    }
-
-    ul{
-      padding-left:20px;
-      margin:10px 0;
-    }
-
-    li{margin:6px 0}
-
-    a{color:var(--green)}
-
-    table{
-      width:100%;
-      border-collapse:collapse;
-      margin:14px 0;
-      font-size:14px;
-    }
-
-    th, td{
-      text-align:left;
-      padding:10px 12px;
-      border-bottom:1px solid rgba(248,252,252,.12);
-      vertical-align:top;
-    }
-
-    th{
-      color:var(--teal);
-      font-weight:600;
-    }
-
-    .panel{
-      background:rgba(7,27,26,.35);
-      border:1px solid rgba(248,252,252,.12);
-      border-radius:18px;
-      padding:18px 20px;
-      margin:18px 0;
-    }
-
-    footer{
-      margin-top:32px;
-      font-size:12px;
-      color:rgba(248,252,252,.55);
-      display:flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap:8px;
-    }
-
-    .backlink{
-      display:inline-block;
-      margin-top:24px;
-      font-size:14px;
-    }
-
-    @media(max-width:700px){
-      header{flex-direction:column;align-items:flex-start}
-      h1{font-size:26px}
-    }
-  </style>
+/* ---------- prefers-reduced-motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
 </head>
-
 <body>
-<div class="wrap">
-  <div class="card">
 
-    <header>
-      <img class="logo" src="NAwi_logo.png" alt="NAWI logo">
-      <div class="tag">Política de Privacidad</div>
-    </header>
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="header-in">
+    <a class="logo" href="index.html">
+      <img src="data:image/png;base64,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" alt="Logo de NAWI">
+      <span>NAWI <small>Your Digital Eye</small></span>
+    </a>
+    <a class="pill-store" href="https://apps.apple.com/us/app/nawi-your-digital-eye/id6797077389" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c-.03-2.9 2.37-4.29 2.48-4.36-1.35-1.97-3.45-2.24-4.2-2.27-1.79-.18-3.49 1.05-4.4 1.05-.9 0-2.3-1.02-3.79-1-1.95.03-3.75 1.13-4.75 2.88-2.03 3.52-.52 8.72 1.46 11.58.97 1.4 2.12 2.97 3.63 2.91 1.46-.06 2.01-.94 3.77-.94s2.26.94 3.8.91c1.57-.03 2.57-1.42 3.53-2.83 1.11-1.62 1.57-3.19 1.6-3.27-.04-.02-3.06-1.17-3.13-4.66zM14.16 4.1c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.74-.74.85-1.39 2.23-1.22 3.54 1.29.1 2.6-.65 3.41-1.62z"/></svg>
+      App Store
+    </a>
+  </div>
+</header>
 
-    <h1>Política de Privacidad de NAWI</h1>
-    <div class="updated">Última actualización: 12 de julio de 2026</div>
+<!-- ================= PÁGINA ================= -->
+<main class="page">
+  <div class="legal-grid">
 
-    <p>
-      NAWI ("nosotros", "la app") es una aplicación desarrollada por Nawitech para ayudar a las personas a
-      detectar y prevenir estafas digitales, y a recibir alertas sobre amenazas cercanas. Esta política explica
-      qué datos recopilamos, cómo los usamos, con quién los compartimos y qué derechos tienes sobre ellos.
-    </p>
-
-    <h2>1. Datos que recopilamos</h2>
-    <table>
-      <tr><th>Dato</th><th>Detalle</th></tr>
-      <tr>
-        <td>Datos de cuenta</td>
-        <td>Nombre de usuario y contraseña (almacenada de forma cifrada). No requerimos tu nombre real ni tu correo electrónico para crear una cuenta.</td>
-      </tr>
-      <tr>
-        <td>Datos de perfil</td>
-        <td>Rango de edad, país y, opcionalmente, género y nivel de confianza digital, que nos ayudan a personalizar las alertas.</td>
-      </tr>
-      <tr>
-        <td>Ubicación aproximada</td>
-        <td>Con tu permiso, usamos tu ubicación aproximada (con un margen aleatorio de hasta 150 metros; tu posición exacta nunca se transmite ni se guarda) para mostrarte amenazas cercanas y enviarte alertas de proximidad.</td>
-      </tr>
-      <tr>
-        <td>Token de notificaciones push</td>
-        <td>Un identificador técnico de tu dispositivo (a través de Expo) que usamos para enviarte notificaciones de seguridad.</td>
-      </tr>
-      <tr>
-        <td>Contenido que envías para análisis</td>
-        <td>Mensajes, enlaces, números de teléfono o capturas de pantalla que decides enviarnos para que los analicemos y te digamos si son una posible estafa. Este contenido puede incluir información personal que tú mismo incluyas.</td>
-      </tr>
-      <tr>
-        <td>Inicio de sesión con Google/Apple</td>
-        <td>Si eliges iniciar sesión con Google o Apple, podemos recibir tu correo y nombre asociados a esa cuenta. Esta función aún no está activa en todas las versiones de la app.</td>
-      </tr>
-    </table>
-
-    <h2>2. Para qué usamos tus datos</h2>
-    <ul>
-      <li>Detectar y analizar posibles estafas en el contenido que nos envías.</li>
-      <li>Mostrarte amenazas reportadas cerca de tu ubicación aproximada.</li>
-      <li>Enviarte notificaciones push de seguridad relevantes.</li>
-      <li>Mantener y proteger tu cuenta.</li>
-      <li>Mejorar la precisión de nuestro sistema de detección de fraudes.</li>
-    </ul>
-    <p>No vendemos tus datos personales ni los usamos con fines de publicidad de terceros.</p>
-
-    <h2>3. Con quién compartimos datos</h2>
-    <p>Utilizamos proveedores externos únicamente para operar el servicio:</p>
-    <ul>
-      <li><strong>Expo (push notifications)</strong>: para enviarte alertas a tu dispositivo.</li>
-      <li><strong>Proveedores de hosting e infraestructura</strong> (base de datos y servidores en la nube) que almacenan la información descrita arriba de forma segura.</li>
-      <li><strong>Google / Apple</strong>: únicamente si eliges iniciar sesión con esos proveedores.</li>
-    </ul>
-    <p>No compartimos tus datos con terceros para fines de marketing.</p>
-
-    <div class="panel">
-      <h2 style="margin-top:0">4. Ubicación: cómo protegemos tu privacidad</h2>
-      <p style="margin-bottom:0">
-        NAWI solo solicita permiso de <strong>ubicación aproximada</strong> ("mientras usas la app"), nunca ubicación
-        precisa en segundo plano. Antes de usarse o enviarse, la ubicación se distorsiona aleatoriamente en un radio
-        de hasta 150 metros; tu posición real nunca se transmite ni se conserva.
-      </p>
+    <div class="page-head">
+      <svg class="doodle" width="46" height="52" viewBox="0 0 46 52" fill="none" stroke="#39C3A6" stroke-width="3" stroke-linecap="round" aria-hidden="true"><rect x="10" y="20" width="24" height="20" rx="4"/><path d="M15 20 v-6 a7 7 0 0 1 14 0 v6"/><circle cx="22" cy="30" r="2.6" fill="#39C3A6"/></svg>
+      <h1>Política de Privacidad de NAWI</h1>
+      <div class="updated">Última actualización: 12 de julio de 2026</div>
     </div>
 
-    <h2>5. Retención y eliminación de datos</h2>
-    <p>
-      Conservamos tus datos mientras tu cuenta esté activa. Puedes solicitar la eliminación de tu cuenta y de los
-      datos asociados en cualquier momento desde nuestra página de
-      <a href="eliminar-cuenta.html">eliminación de cuenta</a> o escribiendo a
-      <a href="mailto:pmedrano566@gmail.com">pmedrano566@gmail.com</a>. Procesaremos tu solicitud y eliminaremos
-      tu información en un plazo razonable, salvo que debamos conservar algún dato por obligación legal.
-    </p>
+    <!-- índice -->
+    <aside class="toc sketch" aria-label="Índice de la política">
+      <h2>Contenido</h2>
+      <ol>
+        <li><a href="#c1">1. Datos que recopilamos</a></li>
+        <li><a href="#c2">2. Para qué usamos tus datos</a></li>
+        <li><a href="#c3">3. Con quién compartimos datos</a></li>
+        <li><a href="#c4">4. Ubicación: cómo protegemos tu privacidad</a></li>
+        <li><a href="#c5">5. Retención y eliminación de datos</a></li>
+        <li><a href="#c6">6. Seguridad</a></li>
+        <li><a href="#c7">7. Menores de edad</a></li>
+        <li><a href="#c8">8. Cambios a esta política</a></li>
+        <li><a href="#c9">9. Contacto</a></li>
+      </ol>
+    </aside>
 
-    <h2>6. Seguridad</h2>
-    <p>
-      Aplicamos medidas técnicas razonables (como cifrado de contraseñas y conexiones seguras) para proteger tu
-      información. Ningún sistema es 100% infalible, por lo que te recomendamos no compartir información sensible
-      innecesaria en el contenido que envíes para análisis.
-    </p>
+    <!-- documento -->
+    <article class="doc">
 
-    <h2>7. Menores de edad</h2>
-    <p>
-      NAWI está dirigido a personas adultas. No solicitamos intencionalmente datos de menores de 18 años.
-    </p>
+      <section class="clause sketch">
+        <p>
+          NAWI ("nosotros", "la app") es una aplicación desarrollada por Nawitech para ayudar a las personas a
+          detectar y prevenir estafas digitales, y a recibir alertas sobre amenazas cercanas. Esta política explica
+          qué datos recopilamos, cómo los usamos, con quién los compartimos y qué derechos tienes sobre ellos.
+        </p>
+      </section>
 
-    <h2>8. Cambios a esta política</h2>
-    <p>
-      Podemos actualizar esta política ocasionalmente. Publicaremos cualquier cambio en esta misma página con la
-      fecha de actualización correspondiente.
-    </p>
+      <section class="clause sketch-b" id="c1">
+        <h2><span class="num">1</span>Datos que recopilamos</h2>
+        <table>
+          <tr><th>Dato</th><th>Detalle</th></tr>
+          <tr>
+            <td>Datos de cuenta</td>
+            <td>Nombre de usuario y contraseña (almacenada de forma cifrada). No requerimos tu nombre real ni tu correo electrónico para crear una cuenta.</td>
+          </tr>
+          <tr>
+            <td>Datos de perfil</td>
+            <td>Rango de edad, país y, opcionalmente, género y nivel de confianza digital, que nos ayudan a personalizar las alertas.</td>
+          </tr>
+          <tr>
+            <td>Ubicación aproximada</td>
+            <td>Con tu permiso, usamos tu ubicación aproximada (con un margen aleatorio de hasta 150 metros; tu posición exacta nunca se transmite ni se guarda) para mostrarte amenazas cercanas y enviarte alertas de proximidad.</td>
+          </tr>
+          <tr>
+            <td>Token de notificaciones push</td>
+            <td>Un identificador técnico de tu dispositivo (a través de Expo) que usamos para enviarte notificaciones de seguridad.</td>
+          </tr>
+          <tr>
+            <td>Contenido que envías para análisis</td>
+            <td>Mensajes, enlaces, números de teléfono o capturas de pantalla que decides enviarnos para que los analicemos y te digamos si son una posible estafa. Este contenido puede incluir información personal que tú mismo incluyas.</td>
+          </tr>
+          <tr>
+            <td>Inicio de sesión con Google/Apple</td>
+            <td>Si eliges iniciar sesión con Google o Apple, podemos recibir tu correo y nombre asociados a esa cuenta. Esta función aún no está activa en todas las versiones de la app.</td>
+          </tr>
+        </table>
+      </section>
 
-    <h2>9. Contacto</h2>
-    <p>
-      Si tienes preguntas sobre esta política o sobre cómo tratamos tus datos, escríbenos a
-      <a href="mailto:pmedrano566@gmail.com">pmedrano566@gmail.com</a> o visita nuestra
-      <a href="soporte.html">página de soporte</a>.
-    </p>
+      <section class="clause sketch" id="c2">
+        <h2><span class="num">2</span>Para qué usamos tus datos</h2>
+        <ul>
+          <li>Detectar y analizar posibles estafas en el contenido que nos envías.</li>
+          <li>Mostrarte amenazas reportadas cerca de tu ubicación aproximada.</li>
+          <li>Enviarte notificaciones push de seguridad relevantes.</li>
+          <li>Mantener y proteger tu cuenta.</li>
+          <li>Mejorar la precisión de nuestro sistema de detección de fraudes.</li>
+        </ul>
+        <p>No vendemos tus datos personales ni los usamos con fines de publicidad de terceros.</p>
+      </section>
 
-    <a class="backlink" href="index.html">← Volver a NAWI</a>
+      <section class="clause sketch-b" id="c3">
+        <h2><span class="num">3</span>Con quién compartimos datos</h2>
+        <p>Utilizamos proveedores externos únicamente para operar el servicio:</p>
+        <ul>
+          <li><strong>Expo (push notifications)</strong>: para enviarte alertas a tu dispositivo.</li>
+          <li><strong>Proveedores de hosting e infraestructura</strong> (base de datos y servidores en la nube) que almacenan la información descrita arriba de forma segura.</li>
+          <li><strong>Google / Apple</strong>: únicamente si eliges iniciar sesión con esos proveedores.</li>
+        </ul>
+        <p>No compartimos tus datos con terceros para fines de marketing.</p>
+      </section>
 
-    <footer>
-      <span>© NAWI / Nawitech</span>
-      <span>Your Digital Eye · <a href="en/privacy.html" style="color:rgba(248,252,252,.7)">English</a></span>
-    </footer>
+      <section class="clause hl" id="c4">
+        <h2><span class="num">4</span>Ubicación: cómo protegemos tu privacidad</h2>
+        <p>
+          NAWI solo solicita permiso de <strong>ubicación aproximada</strong> ("mientras usas la app"), nunca ubicación
+          precisa en segundo plano. Antes de usarse o enviarse, la ubicación se distorsiona aleatoriamente en un radio
+          de hasta 150 metros; tu posición real nunca se transmite ni se conserva.
+        </p>
+      </section>
 
+      <section class="clause sketch" id="c5">
+        <h2><span class="num">5</span>Retención y eliminación de datos</h2>
+        <p>
+          Conservamos tus datos mientras tu cuenta esté activa. Puedes solicitar la eliminación de tu cuenta y de los
+          datos asociados en cualquier momento desde nuestra página de
+          <a href="eliminar-cuenta.html">eliminación de cuenta</a> o escribiendo a
+          <a href="mailto:pmedrano566@gmail.com">pmedrano566@gmail.com</a>. Procesaremos tu solicitud y eliminaremos
+          tu información en un plazo razonable, salvo que debamos conservar algún dato por obligación legal.
+        </p>
+      </section>
+
+      <section class="clause sketch-b" id="c6">
+        <h2><span class="num">6</span>Seguridad</h2>
+        <p>
+          Aplicamos medidas técnicas razonables (como cifrado de contraseñas y conexiones seguras) para proteger tu
+          información. Ningún sistema es 100% infalible, por lo que te recomendamos no compartir información sensible
+          innecesaria en el contenido que envíes para análisis.
+        </p>
+      </section>
+
+      <section class="clause sketch" id="c7">
+        <h2><span class="num">7</span>Menores de edad</h2>
+        <p>
+          NAWI está dirigido a personas adultas. No solicitamos intencionalmente datos de menores de 18 años.
+        </p>
+      </section>
+
+      <section class="clause sketch-b" id="c8">
+        <h2><span class="num">8</span>Cambios a esta política</h2>
+        <p>
+          Podemos actualizar esta política ocasionalmente. Publicaremos cualquier cambio en esta misma página con la
+          fecha de actualización correspondiente.
+        </p>
+      </section>
+
+      <section class="clause sketch" id="c9">
+        <h2><span class="num">9</span>Contacto</h2>
+        <p>
+          Si tienes preguntas sobre esta política o sobre cómo tratamos tus datos, escríbenos a
+          <a href="mailto:pmedrano566@gmail.com">pmedrano566@gmail.com</a> o visita nuestra
+          <a href="soporte.html">página de soporte</a>.
+        </p>
+      </section>
+
+    </article>
   </div>
-</div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="foot-in">
+    <span>© NAWI / Nawitech</span>
+    <nav class="foot-links">
+      <a href="index.html">← Volver a NAWI</a>
+      <a href="soporte.html">Soporte</a>
+      <a href="eliminar-cuenta.html">Eliminar cuenta</a>
+    </nav>
+    <span>Your Digital Eye</span>
+  </div>
+</footer>
+
+<script>
+/* Scrollspy mínimo: resalta la cláusula visible en el índice.
+   Sin JS el índice sigue funcionando como anclas normales. */
+(function(){
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduced||!('IntersectionObserver' in window))return;
+  const links=[...document.querySelectorAll('.toc a')];
+  const map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+  const io=new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(e.isIntersecting){
+        links.forEach(a=>a.classList.remove('on'));
+        const a=map.get(e.target.id);if(a)a.classList.add('on');
+      }
+    });
+  },{rootMargin:'-20% 0px -70% 0px'});
+  document.querySelectorAll('.clause[id]').forEach(n=>io.observe(n));
+})();
+</script>
 </body>
 </html>
